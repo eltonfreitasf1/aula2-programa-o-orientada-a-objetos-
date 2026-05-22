@@ -21,10 +21,7 @@ public class Titular extends Beneficiario implements CalcularMensalidade {
 
         } else {
             dependentes.add(dependente);
-
-
         }
-
     }
 
     public void resumoContrato() {
@@ -38,7 +35,6 @@ public class Titular extends Beneficiario implements CalcularMensalidade {
         System.out.println("Total mensal: " + total);
 
     }
-
 
     public void tipoCobertura(TipoCobertura tipoCobertura) {
         System.out.println("Cobertura completa: " + tipoCobertura);

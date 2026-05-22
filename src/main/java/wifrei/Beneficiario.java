@@ -14,7 +14,6 @@ public abstract class Beneficiario {
         this.cpf = cpf;
         this.nome = nome;
         this.dataDeNascimento = dataDeNascimento;
-
     }
 
     public double calcularMensalidadeBase() {
@@ -38,7 +37,6 @@ public abstract class Beneficiario {
         LocalDate dataAtual = LocalDate.now();
         Period periodo = Period.between(dataDeNascimento, dataAtual);
         return periodo.getYears();
-
     }
 
     public String getCpf() {
@@ -64,8 +62,6 @@ public abstract class Beneficiario {
     public void setDataDeNascimento(LocalDate dataDeNascimento) {
         this.dataDeNascimento = dataDeNascimento;
     }
-
-
 }
 
 

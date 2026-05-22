@@ -4,7 +4,6 @@ import java.time.LocalDate;
 
 public class Dependente extends Beneficiario implements CalcularMensalidade {
 
-
     public Dependente(String cpf, String nome, LocalDate dataDeNascimento) {
         super(cpf, nome, dataDeNascimento);
     }
@@ -14,11 +13,8 @@ public class Dependente extends Beneficiario implements CalcularMensalidade {
             System.out.println("Dependente nao tem internacao");
         }
     }
-
-
     @Override
     public double calcularMensalidade() {
         return calcularMensalidadeBase()*0.7;
-
     }
 }
